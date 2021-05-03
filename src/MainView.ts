@@ -1,8 +1,9 @@
 import { ICellConfig, PixiGrid } from '@armathai/pixi-grid';
+import { Container, Sprite } from 'pixi.js';
 import { getChildViewGridConfig, getMainViewGridConfig } from './grid-configs';
 
 export class MainView extends PixiGrid {
-    private _duckGroup!: PIXI.Container;
+    private _duckGroup!: Container;
     private _childGrid!: PixiGrid;
 
     public constructor() {
@@ -27,10 +28,10 @@ export class MainView extends PixiGrid {
     }
 
     private _buildGroup(): void {
-        const group = new PIXI.Container();
+        const group = new Container();
 
-        const duck1 = PIXI.Sprite.from('duck');
-        const duck2 = PIXI.Sprite.from('duck');
+        const duck1 = Sprite.from('duck');
+        const duck2 = Sprite.from('duck');
 
         duck1.anchor.set(-2, 2);
         duck2.anchor.set(2, -2);
@@ -66,19 +67,19 @@ class ChildView extends PixiGrid {
     }
 
     public postBuild(): void {
-        const owl = PIXI.Sprite.from('owl');
+        const owl = Sprite.from('owl');
         owl.anchor.set(0.5);
 
-        const parrot1 = PIXI.Sprite.from('parrot');
-        const parrot2 = PIXI.Sprite.from('parrot');
+        const parrot1 = Sprite.from('parrot');
+        const parrot2 = Sprite.from('parrot');
 
         parrot1.x = 200;
         parrot2.x = -200;
 
-        const chick = PIXI.Sprite.from('chick');
-        const pixel = PIXI.Sprite.from('pixel');
+        const chick = Sprite.from('chick');
+        const pixel = Sprite.from('pixel');
 
-        const parrotCont = new PIXI.Container();
+        const parrotCont = new Container();
         parrotCont.addChild(parrot1);
         parrotCont.addChild(parrot2);
 

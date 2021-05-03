@@ -51,8 +51,8 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^3.3.0",
         "file-loader": "^6.2.0",
-        "fork-ts-checker-notifier-webpack-plugin": "^3.0.0",
-        "fork-ts-checker-webpack-plugin": "^6.0.6",
+        "fork-ts-checker-notifier-webpack-plugin": "^4.0.0",
+        "fork-ts-checker-webpack-plugin": "^6.2.5",
         "handlebars": "^4.7.6",
         "handlebars-loader": "^1.7.1",
         "html-webpack-plugin": "^4.5.0",
@@ -71,10 +71,9 @@
         "webpack-merge": "^5.7.0"
     },
     "dependencies": {
-        "@armathai/pixi-grid": "^3.0.5",
+        "@armathai/pixi-grid": "^4.0.0",
         "core-js": "^3.8.1",
-        "pixi.js": "^5.3.3",
-        "pixi.js-legacy": "^5.3.3",
+        "pixi.js": "^6.0.2",
         "request-animation-frame-polyfill": "^1.0.2"
     }
 }

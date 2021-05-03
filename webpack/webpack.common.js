@@ -8,7 +8,6 @@ module.exports = (loader = 'file') => {
         entry: {
             'polyfill-performance.now': './libs/polyfill-performance.now/index.ts',
             'polyfill-requestAnimationFrame': './libs/polyfill-requestAnimationFrame/index.ts',
-            pixi: './libs/pixi/index.ts',
             app: './src/index.ts',
         },
         plugins: [

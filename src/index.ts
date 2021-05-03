@@ -1,3 +1,4 @@
+import { Application } from 'pixi.js';
 import chick from '../assets/images/chick.png';
 import duck from '../assets/images/duck.png';
 import owl from '../assets/images/owl.png';
@@ -5,7 +6,7 @@ import parrot from '../assets/images/parrot.png';
 import pixel from '../assets/images/pixel.png';
 import { MainView } from './MainView';
 
-class Game extends PIXI.Application {
+class Game extends Application {
     public constructor() {
         super({ resizeTo: window, backgroundColor: 0xcdcdcd });
         document.body.appendChild(this.view);
